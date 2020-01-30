@@ -1,7 +1,8 @@
-from debian:10
+from debian:stable-slim
 
 run apt-get update
 run apt-get install --yes wget xz-utils
+run rm -rf /var/lib/apt/lists/*
 
 run mkdir -p tmp/zig
 workdir tmp/zig
