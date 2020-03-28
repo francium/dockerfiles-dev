@@ -1,8 +1,8 @@
-from debian:stable-slim
+from francium/dev/base
 
 run apt-get update
 run apt-get install --yes wget xz-utils
-run rm -rf /var/lib/apt/lists/*
+run rm -rf /var/lib/apt/lists/* /var/cache/apt/
 
 run mkdir -p tmp/zig
 workdir tmp/zig
@@ -14,3 +14,5 @@ run mv zig /usr/local/bin &&\
 
 workdir /mnt
 run rm -rf /tmp/zig
+
+user francium

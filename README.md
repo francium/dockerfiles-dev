@@ -1,5 +1,7 @@
 ```
+export IMAGE_NAME=francium/dev/some_name:latest
+export MNT=/some/path
 cd <dir>
 make -f ../Makefile .build
-MNT=/some/path make -f ../Makefile .run
+make -f ../Makefile .run
 ```
