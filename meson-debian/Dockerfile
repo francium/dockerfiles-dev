@@ -1,4 +1,4 @@
-from francium/dev/base
+from francium/dev/base-debian
 
 run apt-get update
 run apt-get install --yes python3 python3-pip python3-setuptools python3-wheel ninja-build

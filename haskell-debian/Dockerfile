@@ -1,4 +1,4 @@
-FROM francium/dev/base
+FROM francium/dev/base-debian
 
 RUN apt-get update \
     && apt-get install --yes \
