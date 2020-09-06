@@ -1,10 +1,15 @@
-See `./run.sh`
+## run.sh
+```
+../path/to/run.sh <haskell> ~/home/some/path/to/mount
+```
+Where `<haskell>` is one of the docker target directories in this repo.
 
-# Manual instructions
+
+## Manual instructions
 ```
 # Build
-make .build DIR=<docker-file-dir>
+make .build DIR=<haskell>
 
 # Run
-make .run DIR=<docker-file-dir> MNT=$(pwd) # or someother absolute path
+make .run DIR=<haskell> MNT=$(pwd) # MNT can be someother absolute path
 ```
